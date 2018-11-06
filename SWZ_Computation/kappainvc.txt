@@ -1,0 +1,1 @@
+-(pow(l,2)*pow(l*cos(th1)*(-(l*y*cos(th2)) + pow(y,2) - l*(l0 - x + y)*sin(th2)) + x*(l*y*cos(th2) + l*(l0 - x)*sin(th2) - l*sin(th1)*(y - l*sin(th2))),-2)*(y*cos(th1) - x*sin(th1))*(y*cos(th2) + (l0 - x)*sin(th2))*(-(l0*y) + l*y*cos(th1) - l*y*cos(th2) + l*l0*sin(th1) - l*x*sin(th1) + pow(l,2)*sin(th1 - th2) + l*x*sin(th2)))

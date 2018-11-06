@@ -1,0 +1,1 @@
+-acos((-pow(l,2) + pow(r,2) - pow(x,2) - pow(y,2))/(2.*pow(r,2)*pow((pow(l,2)*(pow(x,2) + pow(y,2)))/pow(r,4), 0.5))) + atan2(-((l*y)/pow(r,2)),-((l*x)/pow(r,2))),acos((-pow(l,2) - pow(l0,2) + pow(r,2) + 2*l0*x - pow(x,2) - pow(y,2))/(2.*pow(r,2)*pow((pow(l,2)*(pow(l0,2) - 2*l0*x + pow(x,2) + pow(y,2)))/pow(r,4), 0.5))) + atan2(-((l*y)/pow(r,2)),(l*(l0 - x))/pow(r,2))

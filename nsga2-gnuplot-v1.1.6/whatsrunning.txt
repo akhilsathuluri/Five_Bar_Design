@@ -1,0 +1,8 @@
+Tmux Whatsrunning file
+1. tmux 0 is running the 2 objective simulation of Area and MoM
+2. tmux 2 is running the 3 objective simulation of Area, MoM and GCI
+3. tmux 3 is running the 2 objective simulation of MoM and GCI
+4. tmux 4 is running the 1 objective simulation of MoM only
+5. tmux 5 is running the 1 objective simulation of GCI only
+
+Next time add print for generation and also the objective function to see if something totally wrong is happening to matfun and polysol

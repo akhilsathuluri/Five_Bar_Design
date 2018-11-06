@@ -1,0 +1,5 @@
+k*(x*pow(l0, 4) + pow(l0, 3)*(pow(l1, 2) - pow(r1, 2) - 9*pow(x, 2)) + 2*x*pow(l0, 2)*(-5*pow(l1, 2) + 5*pow(r1, 2) + 13*pow(x, 2)) + 4*x*(pow(l1, 4) + pow(r1, 4) + 4*pow(r1, 2)*pow(x, 2) - 2*pow(l1, 2)*(pow(r1, 2) + 2*pow(x, 2)) + 3*pow(x, 4)) - 2*l0*(pow(l1, 4) + pow(r1, 4) + 12*pow(r1, 2)*pow(x, 2) - 2*pow(l1, 2)*(pow(r1, 2) + 6*pow(x, 2)) + 15*pow(x, 4)))
+-((l0 - 2*x)*pow(l0, 2)*(-4*l0*x + pow(l0, 2) - 4*pow(l1, 2) + 4*pow(x, 2)))/2
+-(k*(l0 - 2*x)*(-12*l0*x + 3*pow(l0, 2) - 8*pow(l1, 2) + 8*pow(r1, 2) + 12*pow(x, 2)))
+-2*(l0 - 2*x)*pow(l0, 2)
+-6*k*(l0 - 2*x)

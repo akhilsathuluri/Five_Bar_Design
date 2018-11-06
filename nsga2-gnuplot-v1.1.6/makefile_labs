@@ -1,0 +1,38 @@
+# Makefile for compiling NSGA-II source code
+CC=gcc
+LD=gcc
+RM=rm -f
+CFLAGS= -Wall -Wno-unused -ansi -pedantic -std=c99  -g -O3
+LDFLAGS= -L.
+OBJS := singularityF1.o singularityF21.o singularityF22.o singularityG1.o singularityG2.o  
+OBJS += kinematics.o fiveBar.o rectInt.o problemdef.o
+
+# Choose a polynomial solver, GSL or JT.
+SOLVER = GSL
+
+ifeq ($(SOLVER),GSL)
+CFLAGS += -DGSL_POLY_SOLVE
+LIBS+= -lgsl -lgslcblas
+else
+CC=g++
+LD=g++
+CFLAGS+= -DJT_POLY_SOLVE
+OBJS+= polySolve_JT.o
+endif
+
+MAIN=nsga2r
+LIBS += -lm -lnsga
+
+all:$(MAIN)
+$(MAIN):$(OBJS)
+	$(LD) $(LDFLAGS) $(OBJS) -o $(MAIN) $(LIBS) 
+
+%.o: %.c global.h rand.h
+	$(CC) $(CFLAGS) -c $<
+clean:
+	$(RM) $(OBJS)
+	
+dist-clean: clean
+	$(RM) best_pop.out all_pop.out final_pop.out initial_pop.out params.out plot.out 
+	$(RM) $(MAIN)	
+
